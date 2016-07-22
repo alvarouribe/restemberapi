@@ -1,4 +1,7 @@
 INDEX
 
-{{log model}}
-{{model}}
+{{#each model as |product|}}
+	{{product.id}}<br>
+	{{product.sku}}<br>
+	{{product.price}}
+{{/each}}
